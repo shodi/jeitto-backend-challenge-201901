@@ -8,6 +8,11 @@ O desafio foi implementar uma API em Python para simular a contratação de cré
 MongoDB exposto na porta 27017  
 Python3
 
+## MongoDB
+
+O mongoDB foi utilizado por conta da volumetria de dados que estariam sendo armazenados no banco de dados.
+Visto que um banco não relacional, no geral, é mais simples de ser escalado, como na funcionalidade Replication do MongoDB.
+
 ## Rodar o Projeto
 #### Sem Docker
 Sugiro fortemente que seja utilizado o ambiente virtual do python (VirtualEnv) para que não haja conflitos de dependências entre outros projetos python  
