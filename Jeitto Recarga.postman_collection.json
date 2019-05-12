@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "b5c45603-800c-4741-82ef-dcaffce99cf2",
+		"name": "Jeitto Recarga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/CompanyProducts?companyName=teste Shodi 1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CompanyProducts"
+					],
+					"query": [
+						{
+							"key": "companyName",
+							"value": "teste Shodi 1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"New Company\",\n\t\"products\": [{\"name\": \"Produto 1\", \"value\": 5}]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/CompanyProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CompanyProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge Phone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\": \"952554155\",\n\t\"productId\": \"5cd8525575c50829dd6ad38f\",\n\t\"companyId\": \"a\",\n\t\"value\": 50\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/PhoneRecharges",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneRecharges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recharges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Companies By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Company By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/CompanyProducts?companyId=5cd8525575c50829dd6ad390",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CompanyProducts"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "5cd8525575c50829dd6ad390"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recharge By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/PhoneRecharges?phoneNumber=952554155",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneRecharges"
+					],
+					"query": [
+						{
+							"key": "phoneNumber",
+							"value": "952554155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recharges By Phone Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
