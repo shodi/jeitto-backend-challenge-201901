@@ -1,8 +1,10 @@
 #Desafio Backend Jeitto
+
 O desafio foi implementar uma API em Python para simular a contratação de crédito telefônico
 
 
 ## Pré-requisistos
+
 MongoDB exposto na porta 27017  
 Python3
 
@@ -10,7 +12,8 @@ Python3
 #### Sem Docker
 Sugiro fortemente que seja utilizado o ambiente virtual do python (VirtualEnv) para que não haja conflitos de dependências entre outros projetos python  
 Assumindo que os pré-requisitos, citados anteriormente, estão em plena conformidade, para rodar o projeto basta instalarmos as dependências da seguinte maneira:
-> pip install -r requirements.txt
+
+> pip install --trusted-host pypi.python.org -r requirements.txt
 
 Assim que as dependências forem instaladas, basta executarmos o script principal, da seguinte maneira:
 > python3 main.py
